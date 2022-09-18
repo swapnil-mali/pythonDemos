@@ -15,7 +15,7 @@ def executeCommand(command, expectedOutput):
             print("Success: Matched expected string.")
         else:
             print("Error: Missing expected string {}".format(expectedOutput))
-            #raise Exception("Err")
+            raise Exception("Failed to match expected string")
         print("======================================================")
         print(commandOutput)
         print("======================================================")
