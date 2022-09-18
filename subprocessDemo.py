@@ -14,7 +14,8 @@ def executeCommand(command, expectedOutput):
         if(pattern.search(commandOutput) != None):
             print("Success: Matched expected string.")
         else:
-            print("Failed: Missing expected string {}".format(expectedOutput))
+            print("Error: Missing expected string {}".format(expectedOutput))
+            #raise Exception("Err")
         print("======================================================")
         print(commandOutput)
         print("======================================================")
