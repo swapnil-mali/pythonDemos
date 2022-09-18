@@ -4,8 +4,8 @@ import json
 
 with open("sampleJSON.json", 'r') as file:
     jsonData = json.load(file)
-    print(type(jsonData))
-    print(jsonData)
+    #print(type(jsonData))
+    #print(jsonData)
 
 print(jsonData['quiz'].keys())
 
